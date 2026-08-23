@@ -1,0 +1,10 @@
+{
+  "name": "iOpenPDF",
+  "short_name": "iOpenPDF",
+  "description": "Free browser-based PDF tools for compression and conversion.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8f8",
+  "theme_color": "#dc2626",
+  "icons": [{ "src": "./pdf-logo.png", "sizes": "1024x1024", "type": "image/png" }]
+}

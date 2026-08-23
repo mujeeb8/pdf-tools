@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF to JPG Converter Online Free | iOpenPDF</title>
+  <meta name="description" content="Convert PDF pages to JPG images online for free. Process PDF files privately in your browser and download JPG or ZIP output.">
+  <meta name="keywords" content="PDF to JPG, PDF to JPEG, convert PDF to JPG, PDF JPG converter, PDF pages to images, PDF to JPG online free">
+  <meta name="author" content="iOpenPDF"><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://iopenpdf.com/pdf-to-jpg.html"><link rel="icon" type="image/png" href="./pdf-logo.png"><link rel="apple-touch-icon" href="./pdf-logo.png"><link rel="manifest" href="./site.webmanifest">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="iOpenPDF"><meta property="og:title" content="PDF to JPG Converter Online Free | iOpenPDF"><meta property="og:description" content="Convert PDF pages to JPG images privately in your browser."><meta property="og:url" content="https://iopenpdf.com/pdf-to-jpg.html"><meta property="og:image" content="https://iopenpdf.com/pdf-logo.png"><meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"PDF to JPG Converter","url":"https://iopenpdf.com/pdf-to-jpg.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Convert PDF pages to JPG images in the browser."}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";</script>
+  <script type="module">
+    import init from "./pdf-project.js";
+    import { loadCachedWasm } from "./wasm-cache.js";
+    await init({ module_or_path: await loadCachedWasm() });
+  </script>
+</head>
+<body class="min-h-screen bg-[#fff8f8] text-red-950">
+  <main class="mx-auto max-w-5xl px-6 py-8 sm:px-10 sm:py-12">
+    <a href="index.html" class="mb-6 flex justify-center" aria-label="iOpenPDF home">
+      <img src="./iopenpdf-logo.png" alt="iOpenPDF" class="h-auto w-full max-w-[20rem] sm:max-w-[26rem]">
+    </a>
+    <header class="mx-auto max-w-3xl text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.25em] text-red-600">03 / PDF utility</p>
+      <h1 class="mt-3 text-5xl font-black tracking-tight">PDF to JPG</h1>
+      <p class="mx-auto mt-4 max-w-2xl leading-7 text-red-900/65">Render a PDF page as JPG, or receive all pages in a ZIP archive.</p>
+    </header>
+    <a href="index.html" class="text-sm font-bold text-red-600">&lt;- All PDF tools</a>
+    <div class="mt-10 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <section id="pdf-jpg-preview-drop-zone">
+        <div id="pdf-jpg-drop-zone" class="mt-8 border-2 border-red-900 bg-white p-6 shadow-[7px_7px_0_#991b1b]">
+          <label for="pdf-jpg-input" class="block text-sm font-bold">Select or drag and drop a PDF</label>
+          <input id="pdf-jpg-input" type="file" accept=".pdf,application/pdf" class="mt-3 block w-full text-sm file:mr-4 file:border-0 file:bg-red-600 file:px-4 file:py-2 file:font-bold file:text-white">
+          <button id="pdf-jpg-btn" class="mt-5 w-full bg-red-600 px-5 py-3 font-bold text-white hover:bg-red-700">Convert to JPG</button>
+          <button id="pdf-jpg-clear-btn" type="button" class="mt-3 w-full border-2 border-red-900 px-5 py-2 font-bold text-red-900 hover:bg-red-50">Clear selection</button>
+          <p id="pdf-jpg-status" class="mt-4 text-sm text-red-900/65">Select a PDF.</p>
+        </div>
+      </section>
+      <section>
+        <div id="preview-empty" class="flex min-h-[32rem] items-center justify-center border-2 border-dashed border-red-900/25 bg-white/60 p-8 text-center text-red-900/45">Your selected or dropped PDF preview will appear here.</div>
+        <iframe id="pdf-preview" title="Selected PDF preview" class="hidden min-h-[32rem] w-full border-2 border-red-900 bg-white"></iframe>
+      </section>
+    </div>
+    <div hidden aria-hidden="true">
+      <input id="pdf-input"><button id="compress-btn"></button><span id="status"></span>
+      <input id="images-input"><button id="images-pdf-btn"></button><span id="images-status"></span>
+      <input id="pdf-png-input"><button id="pdf-png-btn"></button><span id="pdf-png-status"></span>
+      <input id="image-to-jpg-input"><button id="image-to-jpg-btn"></button><span id="image-to-jpg-status"></span>
+      <input id="image-to-png-input"><button id="image-to-png-btn"></button><span id="image-to-png-status"></span>
+      <input id="image-compress-input"><button id="image-compress-btn"></button><span id="image-compress-status"></span>
+      <input id="image-compress-quality" value="72"><input id="image-compress-dimension" value="2400">
+    </div>
+  </main>
+  <script type="module">import { setupPdfDrop } from "./file-drop.js"; setupPdfDrop("pdf-jpg-input", "pdf-jpg-drop-zone", "pdf-jpg-status", "pdf-preview", "preview-empty", "pdf-jpg-clear-btn", "pdf-jpg-preview-drop-zone");</script>
+</body>
+</html>
