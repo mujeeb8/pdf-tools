@@ -85,7 +85,423 @@
       </a>
     </section>
 
-    <footer class="mt-14 border-t border-red-900/15 pt-5 text-center text-sm text-red-900/50">&copy; iOpenPDF. All rights reserved.</footer>
+    <footer class="mt-14 border-t border-red-900/15 pt-5 text-center text-sm text-red-900/50">
+      <button type="button" id="footer-info-trigger" class="cursor-pointer transition hover:text-red-700">&copy; iOpenPDF. All rights reserved.</button>
+    </footer>
   </main>
+
+  <div id="footer-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4" aria-hidden="true">
+    <div class="relative w-full max-w-2xl max-h-[80vh] overflow-hidden rounded-3xl border border-red-200 bg-white shadow-[0_20px_60px_rgba(69,10,10,0.25)]">
+      <div class="flex items-center justify-between border-b border-red-100 px-6 py-4 sm:px-8">
+        <h2 class="pr-10 text-2xl font-black tracking-tight text-red-900">About iOpenPDF</h2>
+        <button type="button" id="footer-modal-close" class="flex h-10 w-10 items-center justify-center rounded-full border border-red-200 text-xl font-bold text-red-800 transition hover:bg-red-50" aria-label="Close information">&times;</button>
+      </div>
+      <div class="max-h-[calc(80vh-80px)] overflow-y-auto px-6 py-5 sm:px-8">
+        <div class="space-y-6 text-blue-900/75">
+          <div>
+            <h3 class="mt-0 text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Popular PDF tools</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Free online PDF tools</li>
+              <li>Free PDF tools online</li>
+              <li>Online PDF tools</li>
+              <li>PDF tools online</li>
+              <li>Free PDF converter tools</li>
+              <li>Online PDF converter</li>
+              <li>Free online PDF converter</li>
+              <li>PDF converter online free</li>
+              <li>PDF tools for everyone</li>
+              <li>Easy PDF tools online</li>
+              <li>Simple PDF tools</li>
+              <li>Free PDF utilities</li>
+              <li>Online PDF utilities</li>
+              <li>PDF file tools</li>
+              <li>PDF document tools</li>
+              <li>PDF processing tools online</li>
+              <li>Browser PDF tools</li>
+              <li>PDF tools without software</li>
+              <li>PDF tools without installation</li>
+              <li>Free PDF tools without signup</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">iOpenPDF PDF tools</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>iOpenPDF</li>
+              <li>iOpenPDF online</li>
+              <li>iOpenPDF tools</li>
+              <li>iOpenPDF PDF tools</li>
+              <li>iOpenPDF PDF converter</li>
+              <li>iOpenPDF online PDF tools</li>
+              <li>iOpenPDF free PDF tools</li>
+              <li>iOpenPDF PDF converter online</li>
+              <li>iOpenPDF PDF to JPG</li>
+              <li>iOpenPDF PDF to PNG</li>
+              <li>iOpenPDF image to PDF</li>
+              <li>iOpenPDF PDF compressor</li>
+              <li>iOpenPDF PDF tools online</li>
+              <li>iOpenPDF free online PDF tools</li>
+              <li>iOpenPDF document converter</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PDF to JPG and PNG</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF to JPG converter</li>
+              <li>PDF to JPG online</li>
+              <li>Free PDF to JPG converter</li>
+              <li>Convert PDF to JPG</li>
+              <li>Convert PDF pages to JPG</li>
+              <li>PDF to image converter</li>
+              <li>PDF to image online</li>
+              <li>Convert PDF to image</li>
+              <li>PDF to PNG converter</li>
+              <li>PDF to PNG online</li>
+              <li>Free PDF to PNG converter</li>
+              <li>Convert PDF to PNG</li>
+              <li>Convert PDF pages to PNG</li>
+              <li>PDF pages to JPG</li>
+              <li>PDF pages to PNG</li>
+              <li>Save PDF as JPG</li>
+              <li>Save PDF as PNG</li>
+              <li>Save PDF pages as JPG</li>
+              <li>Save PDF pages as PNG</li>
+              <li>Turn PDF into JPG</li>
+              <li>Turn PDF into PNG</li>
+              <li>Extract images from PDF</li>
+              <li>Convert PDF pages into images</li>
+              <li>Export PDF pages as images</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Image to PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Image to PDF converter</li>
+              <li>Image to PDF online</li>
+              <li>Free image to PDF converter</li>
+              <li>Convert image to PDF</li>
+              <li>Convert images to PDF</li>
+              <li>JPG to PDF</li>
+              <li>JPG to PDF converter</li>
+              <li>JPG to PDF online</li>
+              <li>JPEG to PDF</li>
+              <li>JPEG to PDF converter</li>
+              <li>PNG to PDF</li>
+              <li>PNG to PDF converter</li>
+              <li>Photo to PDF</li>
+              <li>Photo to PDF converter</li>
+              <li>Pictures to PDF</li>
+              <li>Pictures to PDF converter</li>
+              <li>Images to PDF online</li>
+              <li>Multiple images to PDF</li>
+              <li>Convert multiple images to PDF</li>
+              <li>Combine images into PDF</li>
+              <li>Turn pictures into PDF</li>
+              <li>Make PDF from images</li>
+              <li>Create PDF from images</li>
+              <li>Create PDF from photos</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PDF compression</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF compressor</li>
+              <li>PDF compressor online</li>
+              <li>Free PDF compressor</li>
+              <li>Free online PDF compressor</li>
+              <li>Compress PDF</li>
+              <li>Compress PDF online</li>
+              <li>Compress PDF files</li>
+              <li>Online PDF compression</li>
+              <li>PDF compression tool</li>
+              <li>PDF size reducer</li>
+              <li>Reduce PDF size</li>
+              <li>Reduce PDF size online</li>
+              <li>Reduce PDF file size</li>
+              <li>Reduce PDF file size online</li>
+              <li>Make PDF smaller</li>
+              <li>Make PDF file smaller</li>
+              <li>Compress large PDF</li>
+              <li>Compress PDF without losing quality</li>
+              <li>Reduce PDF size without losing quality</li>
+              <li>Compress PDF for email</li>
+              <li>Compress PDF for upload</li>
+              <li>Compress PDF to 1MB</li>
+              <li>Compress PDF to 500KB</li>
+              <li>Make PDF less than 1MB</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PDF conversion options</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Convert PDF online</li>
+              <li>Convert PDF files online</li>
+              <li>Free PDF conversion online</li>
+              <li>Online PDF conversion</li>
+              <li>PDF file converter</li>
+              <li>PDF document converter</li>
+              <li>Convert PDF pages</li>
+              <li>Convert PDF to images</li>
+              <li>Convert PDF pages to images</li>
+              <li>Convert PDF documents to images</li>
+              <li>Convert images to PDF</li>
+              <li>Convert photos to PDF</li>
+              <li>Convert JPG to PDF</li>
+              <li>Convert PNG to PDF</li>
+              <li>Convert PDF to JPG and PNG</li>
+              <li>Convert PDF pages to JPG and PNG</li>
+              <li>PDF image conversion</li>
+              <li>Image PDF conversion</li>
+              <li>PDF format converter</li>
+              <li>Online document conversion</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">JPG PDF tools</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>JPG PDF converter</li>
+              <li>JPG to PDF online</li>
+              <li>Free JPG to PDF</li>
+              <li>Convert JPG to PDF online</li>
+              <li>Convert JPG images to PDF</li>
+              <li>Convert JPG pictures to PDF</li>
+              <li>JPEG PDF converter</li>
+              <li>JPEG to PDF online</li>
+              <li>Free JPEG to PDF</li>
+              <li>Convert JPEG to PDF online</li>
+              <li>PDF to JPG converter online</li>
+              <li>Free PDF to JPG online</li>
+              <li>Convert PDF to JPG images</li>
+              <li>PDF page to JPG</li>
+              <li>PDF pages as JPG</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PNG PDF tools</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PNG PDF converter</li>
+              <li>PNG to PDF online</li>
+              <li>Free PNG to PDF</li>
+              <li>Convert PNG to PDF online</li>
+              <li>Convert PNG images to PDF</li>
+              <li>Convert PNG pictures to PDF</li>
+              <li>PDF to PNG converter online</li>
+              <li>Free PDF to PNG online</li>
+              <li>Convert PDF to PNG images</li>
+              <li>PDF page to PNG</li>
+              <li>PDF pages as PNG</li>
+              <li>Convert PDF pages into PNG</li>
+              <li>Save PDF pages as PNG</li>
+              <li>High quality PDF to PNG</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Multiple file tools</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Convert multiple images to PDF</li>
+              <li>Multiple images to PDF online</li>
+              <li>Batch image to PDF</li>
+              <li>Batch convert images to PDF</li>
+              <li>Combine multiple images into PDF</li>
+              <li>Combine photos into PDF</li>
+              <li>Create PDF from multiple images</li>
+              <li>Create PDF from multiple photos</li>
+              <li>Convert multiple PDFs to JPG</li>
+              <li>Convert multiple PDFs to PNG</li>
+              <li>Batch PDF to JPG</li>
+              <li>Batch PDF to PNG</li>
+              <li>Batch convert PDF pages to images</li>
+              <li>Compress multiple PDF files</li>
+              <li>Batch PDF compressor</li>
+              <li>Bulk PDF compression</li>
+              <li>Convert multiple PDF files online</li>
+              <li>Process multiple PDF files</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Quality and easy conversion</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>High quality PDF converter</li>
+              <li>High quality PDF to JPG</li>
+              <li>High quality PDF to PNG</li>
+              <li>High quality image to PDF</li>
+              <li>Convert PDF without losing quality</li>
+              <li>Convert PDF pages without losing quality</li>
+              <li>PDF to JPG without losing quality</li>
+              <li>PDF to PNG without losing quality</li>
+              <li>Image to PDF without losing quality</li>
+              <li>Convert images to PDF with high quality</li>
+              <li>Convert PDF to high resolution JPG</li>
+              <li>Convert PDF to high resolution PNG</li>
+              <li>High resolution PDF converter</li>
+              <li>Clear PDF to image conversion</li>
+              <li>Easy PDF conversion</li>
+              <li>Fast PDF conversion</li>
+              <li>Simple PDF converter</li>
+              <li>Quick PDF tools</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Browser and privacy</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF tools in browser</li>
+              <li>PDF converter in browser</li>
+              <li>Convert PDF in browser</li>
+              <li>Image to PDF in browser</li>
+              <li>PDF to JPG in browser</li>
+              <li>PDF to PNG in browser</li>
+              <li>PDF compressor in browser</li>
+              <li>Online PDF tools without software</li>
+              <li>PDF tools without installing software</li>
+              <li>PDF converter without software</li>
+              <li>PDF tools without download</li>
+              <li>PDF tools without installation</li>
+              <li>PDF converter without signup</li>
+              <li>PDF tools without registration</li>
+              <li>Free PDF tools without account</li>
+              <li>Private PDF tools</li>
+              <li>Secure PDF converter</li>
+              <li>Secure PDF tools online</li>
+              <li>Browser based PDF tools</li>
+              <li>Online PDF tools from browser</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Mobile PDF tools</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF tools on phone</li>
+              <li>PDF tools on mobile</li>
+              <li>PDF converter on phone</li>
+              <li>PDF converter on mobile</li>
+              <li>PDF tools for Android</li>
+              <li>PDF converter for Android</li>
+              <li>PDF tools for iPhone</li>
+              <li>PDF converter for iPhone</li>
+              <li>PDF to JPG on phone</li>
+              <li>PDF to PNG on phone</li>
+              <li>Image to PDF on phone</li>
+              <li>Compress PDF on phone</li>
+              <li>PDF to JPG on Android</li>
+              <li>PDF to PNG on Android</li>
+              <li>Image to PDF on Android</li>
+              <li>Compress PDF on Android</li>
+              <li>PDF to JPG on iPhone</li>
+              <li>PDF to PNG on iPhone</li>
+              <li>Image to PDF on iPhone</li>
+              <li>Compress PDF on iPhone</li>
+              <li>Online PDF tools for mobile</li>
+              <li>Free PDF tools for mobile</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Use cases</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF tools for students</li>
+              <li>PDF tools for teachers</li>
+              <li>PDF tools for school</li>
+              <li>PDF tools for university</li>
+              <li>PDF tools for work</li>
+              <li>PDF tools for business</li>
+              <li>PDF tools for documents</li>
+              <li>Convert PDF for online application</li>
+              <li>Convert PDF for university application</li>
+              <li>Convert PDF for job application</li>
+              <li>Convert PDF for government application</li>
+              <li>Convert images to PDF for applications</li>
+              <li>Convert PDF pages to JPG for upload</li>
+              <li>Convert PDF pages to PNG for upload</li>
+              <li>Compress PDF for email</li>
+              <li>Compress PDF for online upload</li>
+              <li>Reduce PDF size for submission</li>
+              <li>Convert documents for sharing</li>
+              <li>Convert PDF for printing</li>
+              <li>Convert PDF pages for editing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Frequently asked</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>How to convert PDF to JPG</li>
+              <li>How to convert PDF to PNG</li>
+              <li>How to convert images to PDF</li>
+              <li>How to convert JPG to PDF</li>
+              <li>How to convert PNG to PDF</li>
+              <li>How to compress a PDF</li>
+              <li>How to reduce PDF file size</li>
+              <li>How to make a PDF smaller</li>
+              <li>How to convert PDF pages to images</li>
+              <li>How to save PDF pages as JPG</li>
+              <li>How to save PDF pages as PNG</li>
+              <li>How to extract images from PDF</li>
+              <li>How to create PDF from images</li>
+              <li>How to create PDF from multiple images</li>
+              <li>How to combine images into PDF</li>
+              <li>How to compress PDF without losing quality</li>
+              <li>How to convert PDF to JPG without losing quality</li>
+              <li>How to convert PDF to PNG without losing quality</li>
+              <li>How to convert images to PDF online</li>
+              <li>How to convert PDF online for free</li>
+              <li>How to use PDF tools without software</li>
+              <li>How to convert PDF on phone</li>
+              <li>How to compress PDF on phone</li>
+              <li>What is the best online PDF converter?</li>
+              <li>What is the best free PDF compressor?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const modal = document.getElementById("footer-modal");
+      const trigger = document.getElementById("footer-info-trigger");
+      const closeButton = document.getElementById("footer-modal-close");
+
+      if (!modal || !trigger || !closeButton) return;
+
+      const openModal = () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("overflow-hidden");
+      };
+
+      const closeModal = () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openModal();
+      });
+
+      closeButton.addEventListener("click", closeModal);
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

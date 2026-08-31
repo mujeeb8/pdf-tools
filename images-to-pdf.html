@@ -55,6 +55,413 @@
       <input id="image-compress-quality" value="72"><input id="image-compress-dimension" value="2400">
     </div>
   </main>
+  <footer class="mt-14 border-t border-red-900/15 pt-5 text-center text-sm text-red-900/50">
+    <button type="button" id="footer-info-trigger" class="cursor-pointer transition hover:text-red-700">&copy; iOpenPDF. All rights reserved.</button>
+  </footer>
+
+  <div id="footer-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4" aria-hidden="true">
+    <div class="relative w-full max-w-2xl max-h-[80vh] overflow-hidden rounded-3xl border border-red-200 bg-white shadow-[0_20px_60px_rgba(69,10,10,0.25)]">
+      <div class="flex items-center justify-between border-b border-red-100 px-6 py-4 sm:px-8">
+        <h2 class="pr-10 text-2xl font-black tracking-tight text-red-900">About iOpenPDF</h2>
+        <button type="button" id="footer-modal-close" class="flex h-10 w-10 items-center justify-center rounded-full border border-red-200 text-xl font-bold text-red-800 transition hover:bg-red-50" aria-label="Close information">&times;</button>
+      </div>
+      <div class="max-h-[calc(80vh-80px)] overflow-y-auto px-6 py-5 sm:px-8">
+        <div class="space-y-6 text-blue-900/75">
+          <div>
+            <h3 class="mt-0 text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Popular image to PDF options</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Convert images to PDF online quickly.</li>
+              <li>Convert JPG images to PDF with a free online tool.</li>
+              <li>Convert PNG images to PDF online.</li>
+              <li>Turn photos into PDF files easily.</li>
+              <li>Create a PDF from images online.</li>
+              <li>Convert pictures to PDF without complicated software.</li>
+              <li>Combine multiple images into one PDF.</li>
+              <li>Convert multiple photos to a single PDF file.</li>
+              <li>Make a PDF from JPG, JPEG, and PNG images.</li>
+              <li>Convert image files into PDF documents.</li>
+              <li>Create PDF files from photos directly in your browser.</li>
+              <li>Convert images to PDF without installing software.</li>
+              <li>Make a PDF from pictures on your phone or computer.</li>
+              <li>Convert scanned images into PDF documents.</li>
+              <li>Turn screenshots into PDF files.</li>
+              <li>Convert images to PDF for easy sharing and printing.</li>
+              <li>Create a PDF from multiple images in seconds.</li>
+              <li>Convert photos to PDF online for free.</li>
+              <li>Convert images to PDF from any modern device.</li>
+              <li>Use a simple image to PDF converter in your browser.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">More image to PDF names</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Image to PDF</li>
+              <li>Image to PDF converter</li>
+              <li>Image to PDF online</li>
+              <li>Free image to PDF converter</li>
+              <li>Free image to PDF online</li>
+              <li>Convert image to PDF</li>
+              <li>Convert images to PDF</li>
+              <li>Convert image into PDF</li>
+              <li>Convert images into PDF</li>
+              <li>Image converter to PDF</li>
+              <li>Picture to PDF</li>
+              <li>Picture to PDF converter</li>
+              <li>Picture to PDF online</li>
+              <li>Convert picture to PDF</li>
+              <li>Convert pictures to PDF</li>
+              <li>Photo to PDF</li>
+              <li>Photo to PDF converter</li>
+              <li>Photo to PDF online</li>
+              <li>Convert photo to PDF</li>
+              <li>Convert photos to PDF</li>
+              <li>Image file to PDF</li>
+              <li>Image files to PDF</li>
+              <li>Image to document converter</li>
+              <li>Image format to PDF converter</li>
+              <li>Convert image file to PDF</li>
+              <li>Make PDF from image</li>
+              <li>Make PDF from images</li>
+              <li>Make PDF from photo</li>
+              <li>Make PDF from photos</li>
+              <li>Create PDF from image</li>
+              <li>Create PDF from images</li>
+              <li>Create PDF from photo</li>
+              <li>Create PDF from photos</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">JPG and JPEG to PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>JPG to PDF</li>
+              <li>JPG to PDF converter</li>
+              <li>JPG to PDF online</li>
+              <li>Free JPG to PDF converter</li>
+              <li>Free JPG to PDF online</li>
+              <li>Convert JPG to PDF</li>
+              <li>Convert JPG image to PDF</li>
+              <li>Convert JPG images to PDF</li>
+              <li>Convert JPG into PDF</li>
+              <li>Convert multiple JPG to PDF</li>
+              <li>Convert multiple JPG images to PDF</li>
+              <li>Convert JPG photos to PDF</li>
+              <li>Make PDF from JPG</li>
+              <li>Make PDF from JPG images</li>
+              <li>Create PDF from JPG</li>
+              <li>Create PDF from JPG images</li>
+              <li>JPEG to PDF</li>
+              <li>JPEG to PDF converter</li>
+              <li>JPEG to PDF online</li>
+              <li>Free JPEG to PDF converter</li>
+              <li>Convert JPEG to PDF</li>
+              <li>Convert JPEG image to PDF</li>
+              <li>Convert JPEG images to PDF</li>
+              <li>Convert multiple JPEG to PDF</li>
+              <li>Make PDF from JPEG</li>
+              <li>Create PDF from JPEG</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PNG to PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PNG to PDF</li>
+              <li>PNG to PDF converter</li>
+              <li>PNG to PDF online</li>
+              <li>Free PNG to PDF converter</li>
+              <li>Free PNG to PDF online</li>
+              <li>Convert PNG to PDF</li>
+              <li>Convert PNG image to PDF</li>
+              <li>Convert PNG images to PDF</li>
+              <li>Convert PNG into PDF</li>
+              <li>Convert multiple PNG to PDF</li>
+              <li>Convert multiple PNG images to PDF</li>
+              <li>Make PDF from PNG</li>
+              <li>Make PDF from PNG images</li>
+              <li>Create PDF from PNG</li>
+              <li>Create PDF from PNG images</li>
+              <li>Convert transparent PNG to PDF</li>
+              <li>Convert PNG screenshots to PDF</li>
+              <li>Convert PNG files to PDF online</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">WebP to PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>WebP to PDF</li>
+              <li>WebP to PDF converter</li>
+              <li>WebP to PDF online</li>
+              <li>Free WebP to PDF converter</li>
+              <li>Free WebP to PDF online</li>
+              <li>Convert WebP to PDF</li>
+              <li>Convert WebP image to PDF</li>
+              <li>Convert WebP images to PDF</li>
+              <li>Convert WebP into PDF</li>
+              <li>Convert multiple WebP to PDF</li>
+              <li>Convert multiple WebP images to PDF</li>
+              <li>Make PDF from WebP</li>
+              <li>Make PDF from WebP images</li>
+              <li>Create PDF from WebP</li>
+              <li>Create PDF from WebP images</li>
+              <li>Convert WebP files to PDF online</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Multiple images to one PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Multiple images to PDF</li>
+              <li>Multiple images to one PDF</li>
+              <li>Multiple images into one PDF</li>
+              <li>Convert multiple images to one PDF</li>
+              <li>Convert multiple photos to one PDF</li>
+              <li>Convert multiple pictures to one PDF</li>
+              <li>Combine images into PDF</li>
+              <li>Combine multiple images into PDF</li>
+              <li>Combine photos into PDF</li>
+              <li>Combine pictures into PDF</li>
+              <li>Merge images into PDF</li>
+              <li>Merge multiple images into PDF</li>
+              <li>Merge photos into PDF</li>
+              <li>Merge pictures into PDF</li>
+              <li>Join images into PDF</li>
+              <li>Put multiple images into one PDF</li>
+              <li>Create one PDF from multiple images</li>
+              <li>Create one PDF from multiple photos</li>
+              <li>Make one PDF from multiple pictures</li>
+              <li>Batch image to PDF converter</li>
+              <li>Batch images to PDF</li>
+              <li>Bulk image to PDF converter</li>
+              <li>Bulk images to PDF</li>
+              <li>Convert many images to one PDF</li>
+              <li>Convert many photos to one PDF</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Photo to PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Photo to PDF</li>
+              <li>Photo to PDF converter</li>
+              <li>Photo to PDF online</li>
+              <li>Free photo to PDF converter</li>
+              <li>Convert photo to PDF</li>
+              <li>Convert photos to PDF</li>
+              <li>Convert photo into PDF</li>
+              <li>Convert photos into PDF</li>
+              <li>Make PDF from photo</li>
+              <li>Make PDF from photos</li>
+              <li>Create PDF from photo</li>
+              <li>Create PDF from photos</li>
+              <li>Turn photo into PDF</li>
+              <li>Turn photos into PDF</li>
+              <li>Save photos as PDF</li>
+              <li>Convert camera photos to PDF</li>
+              <li>Convert phone photos to PDF</li>
+              <li>Convert pictures from phone to PDF</li>
+              <li>Make a PDF from phone photos</li>
+              <li>Convert photos to PDF for printing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Scanned images and documents</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Convert scanned images to PDF</li>
+              <li>Convert scanned documents to PDF</li>
+              <li>Convert scanned photos to PDF</li>
+              <li>Scan image to PDF</li>
+              <li>Scanned image to PDF converter</li>
+              <li>Scanned document to PDF converter</li>
+              <li>Convert document images to PDF</li>
+              <li>Convert scanned pages to PDF</li>
+              <li>Combine scanned pages into one PDF</li>
+              <li>Make PDF from scanned images</li>
+              <li>Create PDF from scanned documents</li>
+              <li>Convert document photos to PDF</li>
+              <li>Turn scanned pages into PDF</li>
+              <li>Convert screenshots of documents to PDF</li>
+              <li>Convert screenshots to PDF</li>
+              <li>Make a PDF from screenshots</li>
+              <li>Convert receipts to PDF</li>
+              <li>Convert forms to PDF</li>
+              <li>Convert notes to PDF</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PDF page and layout options</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Create PDF from images in order.</li>
+              <li>Arrange images before converting to PDF.</li>
+              <li>Reorder images in a PDF.</li>
+              <li>Create a PDF with multiple image pages.</li>
+              <li>Put each image on a separate PDF page.</li>
+              <li>Convert multiple images into separate PDF pages.</li>
+              <li>Create a PDF from photos with custom page order.</li>
+              <li>Convert images to PDF with page layout options.</li>
+              <li>Convert images to A4 PDF</li>
+              <li>Make A4 PDF from images</li>
+              <li>Create A4 document from photos</li>
+              <li>Convert images to printable PDF</li>
+              <li>Convert photos to printable PDF</li>
+              <li>Create PDF for printing from images</li>
+              <li>Create document PDF from images</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Use cases</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Convert images to PDF for school</li>
+              <li>Convert photos to PDF for school</li>
+              <li>Convert images to PDF for university</li>
+              <li>Convert photos to PDF for university</li>
+              <li>Convert images to PDF for assignments</li>
+              <li>Convert photos to PDF for assignments</li>
+              <li>Convert images to PDF for applications</li>
+              <li>Convert photos to PDF for applications</li>
+              <li>Convert images to PDF for job applications</li>
+              <li>Convert documents to PDF for job applications</li>
+              <li>Convert images to PDF for online forms</li>
+              <li>Convert photos to PDF for online forms</li>
+              <li>Convert receipts to PDF</li>
+              <li>Convert invoices to PDF</li>
+              <li>Convert notes to PDF</li>
+              <li>Convert screenshots to PDF</li>
+              <li>Convert certificates to PDF</li>
+              <li>Convert ID card images to PDF</li>
+              <li>Convert documents to PDF for printing</li>
+              <li>Convert images to PDF for sharing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Mobile image to PDF</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Image to PDF on phone</li>
+              <li>Convert image to PDF on phone</li>
+              <li>Convert images to PDF on phone</li>
+              <li>Photo to PDF on phone</li>
+              <li>Convert photos to PDF on phone</li>
+              <li>Convert image to PDF on Android</li>
+              <li>Convert images to PDF on Android</li>
+              <li>Photo to PDF on Android</li>
+              <li>Convert photos to PDF on Android</li>
+              <li>JPG to PDF on Android</li>
+              <li>PNG to PDF on Android</li>
+              <li>Convert screenshots to PDF on Android</li>
+              <li>Image to PDF converter for Android</li>
+              <li>Photo to PDF converter for Android</li>
+              <li>Online image to PDF converter for mobile</li>
+              <li>Image to PDF converter for phone</li>
+              <li>Convert image to PDF on iPhone</li>
+              <li>Convert photos to PDF on iPhone</li>
+              <li>Convert images to PDF from mobile</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Browser and privacy</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Image to PDF converter in browser</li>
+              <li>Convert images to PDF in browser</li>
+              <li>JPG to PDF in browser</li>
+              <li>PNG to PDF in browser</li>
+              <li>WebP to PDF in browser</li>
+              <li>Image to PDF converter without software</li>
+              <li>Convert images to PDF without software</li>
+              <li>Convert images to PDF without installing software</li>
+              <li>Image to PDF converter without uploading</li>
+              <li>Convert images to PDF without uploading</li>
+              <li>Private image to PDF converter</li>
+              <li>Secure image to PDF converter</li>
+              <li>Online image to PDF converter</li>
+              <li>Free online image to PDF converter</li>
+              <li>Offline image to PDF converter</li>
+              <li>Client-side image to PDF converter</li>
+              <li>Local image to PDF conversion</li>
+              <li>Convert images to PDF locally in browser</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Frequently asked</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>How to convert an image to PDF</li>
+              <li>How to convert images to PDF</li>
+              <li>How to convert a photo to PDF</li>
+              <li>How to convert photos to PDF</li>
+              <li>How to convert JPG to PDF</li>
+              <li>How to convert JPEG to PDF</li>
+              <li>How to convert PNG to PDF</li>
+              <li>How to convert WebP to PDF</li>
+              <li>How to make a PDF from images</li>
+              <li>How to make a PDF from photos</li>
+              <li>How to make one PDF from multiple images</li>
+              <li>How to combine images into one PDF</li>
+              <li>How to merge images into PDF</li>
+              <li>How to convert scanned images to PDF</li>
+              <li>How to convert screenshots to PDF</li>
+              <li>How to convert images to PDF on phone</li>
+              <li>How to convert images to PDF on Android</li>
+              <li>How to convert photos to PDF on iPhone</li>
+              <li>How to convert images to PDF without software</li>
+              <li>How to convert images to PDF online for free</li>
+              <li>How to create a PDF from multiple photos</li>
+              <li>How to create a PDF from JPG images</li>
+              <li>How to create a PDF from PNG images</li>
+              <li>How to make an A4 PDF from images</li>
+              <li>How to convert images to a printable PDF</li>
+              <li>What image formats can be converted to PDF?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const modal = document.getElementById("footer-modal");
+      const trigger = document.getElementById("footer-info-trigger");
+      const closeButton = document.getElementById("footer-modal-close");
+
+      if (!modal || !trigger || !closeButton) return;
+
+      const openModal = () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("overflow-hidden");
+      };
+
+      const closeModal = () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openModal();
+      });
+
+      closeButton.addEventListener("click", closeModal);
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
   <script type="module">import { setupImageDrop } from "./file-drop.js"; setupImageDrop("images-input", "images-drop-zone", "images-status", "image-preview", "image-preview-empty", "images-clear-btn", "images-preview-drop-zone");</script>
 </body>
 </html>

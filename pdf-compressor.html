@@ -39,6 +39,375 @@
     </div>
     <div hidden aria-hidden="true"><input id="images-input"><button id="images-pdf-btn"></button><span id="images-status"></span><input id="pdf-jpg-input"><button id="pdf-jpg-btn"></button><span id="pdf-jpg-status"></span><input id="pdf-png-input"><button id="pdf-png-btn"></button><span id="pdf-png-status"></span><input id="image-to-jpg-input"><button id="image-to-jpg-btn"></button><span id="image-to-jpg-status"></span><input id="image-to-png-input"><button id="image-to-png-btn"></button><span id="image-to-png-status"></span><input id="image-compress-input"><button id="image-compress-btn"></button><span id="image-compress-status"></span><input id="image-compress-quality" value="72"><input id="image-compress-dimension" value="2400"></div>
   </main>
+  <footer class="mt-14 border-t border-red-900/15 pt-5 text-center text-sm text-red-900/50">
+    <button type="button" id="footer-info-trigger" class="cursor-pointer transition hover:text-red-700">&copy; iOpenPDF. All rights reserved.</button>
+  </footer>
+
+  <div id="footer-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4" aria-hidden="true">
+    <div class="relative w-full max-w-2xl max-h-[80vh] overflow-hidden rounded-3xl border border-red-200 bg-white shadow-[0_20px_60px_rgba(69,10,10,0.25)]">
+      <div class="flex items-center justify-between border-b border-red-100 px-6 py-4 sm:px-8">
+        <h2 class="pr-10 text-2xl font-black tracking-tight text-red-900">About iOpenPDF</h2>
+        <button type="button" id="footer-modal-close" class="flex h-10 w-10 items-center justify-center rounded-full border border-red-200 text-xl font-bold text-red-800 transition hover:bg-red-50" aria-label="Close information">&times;</button>
+      </div>
+      <div class="max-h-[calc(80vh-80px)] overflow-y-auto px-6 py-5 sm:px-8">
+        <div class="space-y-6 text-blue-900/75">
+          <div>
+            <h3 class="mt-0 text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Popular PDF compression options</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress PDF files online quickly.</li>
+              <li>Use our free PDF compressor to reduce file size.</li>
+              <li>Compress PDF documents without complicated software.</li>
+              <li>Reduce PDF file size online while maintaining good quality.</li>
+              <li>Make PDF files smaller for easier sharing and uploading.</li>
+              <li>Reduce the size of large PDF documents online.</li>
+              <li>Compress PDF files directly in your browser.</li>
+              <li>Compress multiple PDF files online.</li>
+              <li>Reduce PDF size before uploading documents.</li>
+              <li>Compress PDFs for email attachments.</li>
+              <li>Make large PDF files smaller without installing software.</li>
+              <li>Optimize PDF files for faster sharing.</li>
+              <li>Reduce PDF document size for online applications.</li>
+              <li>Compress PDF files for websites and online forms.</li>
+              <li>Make PDFs easier to store and transfer.</li>
+              <li>Compress PDF documents from your phone or computer.</li>
+              <li>Use an online PDF size reducer from any modern device.</li>
+              <li>Compress PDF files quickly and easily for free.</li>
+              <li>Reduce PDF file size while preserving document readability.</li>
+              <li>Compress PDF documents without installing additional software.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">More PDF compressor names</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF compressor</li>
+              <li>PDF compressor online</li>
+              <li>Free PDF compressor</li>
+              <li>Free PDF compressor online</li>
+              <li>Compress PDF</li>
+              <li>Compress PDF online</li>
+              <li>Compress PDF file</li>
+              <li>Compress PDF files</li>
+              <li>Online PDF compression</li>
+              <li>PDF compression tool</li>
+              <li>PDF compression online</li>
+              <li>PDF size reducer</li>
+              <li>PDF size reducer online</li>
+              <li>Reduce PDF size</li>
+              <li>Reduce PDF size online</li>
+              <li>Reduce PDF file size</li>
+              <li>Reduce PDF file size online</li>
+              <li>Make PDF smaller</li>
+              <li>Make PDF file smaller</li>
+              <li>Make PDF size smaller</li>
+              <li>PDF file size reducer</li>
+              <li>PDF document compressor</li>
+              <li>PDF file compressor</li>
+              <li>PDF optimizer</li>
+              <li>PDF optimization tool</li>
+              <li>PDF size optimization</li>
+              <li>PDF reducer</li>
+              <li>PDF file size reducer online</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Reduce PDF file size</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Reduce PDF file size</li>
+              <li>Reduce PDF file size online</li>
+              <li>Reduce PDF size</li>
+              <li>Reduce PDF size online</li>
+              <li>Make PDF smaller</li>
+              <li>Make PDF file smaller</li>
+              <li>Make a PDF smaller</li>
+              <li>Make large PDF smaller</li>
+              <li>Make large PDF files smaller</li>
+              <li>Reduce large PDF size</li>
+              <li>Reduce large PDF file size</li>
+              <li>Reduce document size</li>
+              <li>Reduce document file size</li>
+              <li>Reduce PDF document size</li>
+              <li>Reduce PDF attachment size</li>
+              <li>Lower PDF file size</li>
+              <li>Decrease PDF file size</li>
+              <li>Shrink PDF file size</li>
+              <li>Shrink PDF online</li>
+              <li>Make PDF lightweight</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Target PDF sizes</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress PDF to 100KB</li>
+              <li>Compress PDF to 200KB</li>
+              <li>Compress PDF to 500KB</li>
+              <li>Compress PDF to 1MB</li>
+              <li>Compress PDF to 2MB</li>
+              <li>Compress PDF to 5MB</li>
+              <li>Reduce PDF to 100KB</li>
+              <li>Reduce PDF to 200KB</li>
+              <li>Reduce PDF to 500KB</li>
+              <li>Reduce PDF to 1MB</li>
+              <li>Reduce PDF to 2MB</li>
+              <li>Reduce PDF to 5MB</li>
+              <li>Make PDF less than 1MB</li>
+              <li>Make PDF less than 2MB</li>
+              <li>Make PDF less than 5MB</li>
+              <li>Make PDF under 1MB</li>
+              <li>Make PDF under 2MB</li>
+              <li>Make PDF under 5MB</li>
+              <li>Compress PDF under 1MB</li>
+              <li>Compress PDF under 2MB</li>
+              <li>Compress PDF under 5MB</li>
+              <li>Reduce PDF below 1MB</li>
+              <li>Reduce PDF below 2MB</li>
+              <li>Reduce PDF below 5MB</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Quality related</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress PDF without losing quality</li>
+              <li>Compress PDF without losing quality online</li>
+              <li>Reduce PDF size without losing quality</li>
+              <li>Reduce PDF file size without losing quality</li>
+              <li>Compress PDF while maintaining quality</li>
+              <li>Compress PDF while preserving quality</li>
+              <li>High quality PDF compressor</li>
+              <li>PDF compressor with good quality</li>
+              <li>Compress PDF without losing readability</li>
+              <li>Reduce PDF size without affecting readability</li>
+              <li>Compress PDF while preserving text quality</li>
+              <li>Compress PDF while preserving images</li>
+              <li>Reduce PDF size while keeping images clear</li>
+              <li>Optimize PDF without losing quality</li>
+              <li>Best quality PDF compression</li>
+              <li>Low quality PDF compression</li>
+              <li>High quality PDF compression</li>
+              <li>Balanced PDF compression</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">PDF compression levels</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress PDF with low compression</li>
+              <li>Compress PDF with medium compression</li>
+              <li>Compress PDF with high compression</li>
+              <li>Compress PDF with maximum compression</li>
+              <li>Light PDF compression</li>
+              <li>Medium PDF compression</li>
+              <li>Strong PDF compression</li>
+              <li>Maximum PDF compression</li>
+              <li>Best PDF compression level</li>
+              <li>Choose PDF compression level</li>
+              <li>Custom PDF compression</li>
+              <li>PDF compression quality settings</li>
+              <li>PDF compression options</li>
+              <li>PDF compression settings</li>
+              <li>Compress PDF for maximum size reduction</li>
+              <li>Compress PDF for best quality</li>
+              <li>Compress PDF for balanced quality and size</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Use case</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress PDF for email</li>
+              <li>Compress PDF for email attachment</li>
+              <li>Reduce PDF size for email</li>
+              <li>Compress PDF for upload</li>
+              <li>Reduce PDF size for upload</li>
+              <li>Compress PDF for online application</li>
+              <li>Compress PDF for application form</li>
+              <li>Compress PDF for university application</li>
+              <li>Compress PDF for job application</li>
+              <li>Compress PDF for government application</li>
+              <li>Compress PDF for website upload</li>
+              <li>Compress PDF for online forms</li>
+              <li>Compress PDF for sharing</li>
+              <li>Compress PDF before sending</li>
+              <li>Reduce PDF size for WhatsApp</li>
+              <li>Compress PDF for messaging</li>
+              <li>Compress PDF for cloud storage</li>
+              <li>Reduce PDF size for storage</li>
+              <li>Compress PDF for printing</li>
+              <li>Compress PDF for document submission</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Document types</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress scanned PDF</li>
+              <li>Compress scanned document PDF</li>
+              <li>Compress PDF with images</li>
+              <li>Compress PDF with photos</li>
+              <li>Compress PDF with scanned pages</li>
+              <li>Compress school PDF</li>
+              <li>Compress university PDF</li>
+              <li>Compress assignment PDF</li>
+              <li>Compress ebook PDF</li>
+              <li>Compress report PDF</li>
+              <li>Compress resume PDF</li>
+              <li>Compress CV PDF</li>
+              <li>Compress certificate PDF</li>
+              <li>Compress invoice PDF</li>
+              <li>Compress receipt PDF</li>
+              <li>Compress presentation PDF</li>
+              <li>Compress book PDF</li>
+              <li>Compress large document PDF</li>
+              <li>Compress image-heavy PDF</li>
+              <li>Compress scanned images in PDF</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Multiple PDF compression</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress multiple PDF files</li>
+              <li>Compress multiple PDFs online</li>
+              <li>Compress multiple PDF files at once</li>
+              <li>Batch PDF compressor</li>
+              <li>Batch compress PDF files</li>
+              <li>Batch PDF compression</li>
+              <li>Bulk PDF compressor</li>
+              <li>Bulk compress PDF files</li>
+              <li>Compress many PDF files</li>
+              <li>Compress several PDF files</li>
+              <li>Compress multiple documents online</li>
+              <li>Reduce multiple PDF file sizes</li>
+              <li>Compress a folder of PDF files</li>
+              <li>Multiple PDF size reducer</li>
+              <li>Batch PDF size reducer</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Mobile PDF compression</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>Compress PDF on phone</li>
+              <li>Compress PDF on mobile</li>
+              <li>Reduce PDF size on phone</li>
+              <li>Reduce PDF size on mobile</li>
+              <li>Compress PDF on Android</li>
+              <li>Reduce PDF size on Android</li>
+              <li>PDF compressor for Android</li>
+              <li>Online PDF compressor for mobile</li>
+              <li>Free PDF compressor for mobile</li>
+              <li>Compress PDF on iPhone</li>
+              <li>Reduce PDF size on iPhone</li>
+              <li>PDF compressor for iPhone</li>
+              <li>Compress PDF from phone</li>
+              <li>Make PDF smaller on phone</li>
+              <li>Make PDF smaller on Android</li>
+              <li>Compress PDF without app</li>
+              <li>Compress PDF online from mobile</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Browser and privacy</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>PDF compressor in browser</li>
+              <li>Compress PDF in browser</li>
+              <li>PDF compressor without software</li>
+              <li>Compress PDF without software</li>
+              <li>Compress PDF without installing software</li>
+              <li>PDF compressor without uploading</li>
+              <li>Compress PDF without uploading</li>
+              <li>Private PDF compressor</li>
+              <li>Secure PDF compressor</li>
+              <li>Online PDF compressor</li>
+              <li>Free online PDF compressor</li>
+              <li>Offline PDF compressor</li>
+              <li>Client-side PDF compressor</li>
+              <li>Local PDF compression</li>
+              <li>Compress PDF locally in browser</li>
+              <li>Browser-based PDF compressor</li>
+              <li>PDF compression without registration</li>
+              <li>PDF compressor without signup</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold uppercase tracking-[0.08em] text-blue-900">Frequently asked</h3>
+            <ul class="mt-2 list-disc space-y-2 pl-6 text-sm leading-6">
+              <li>How to compress a PDF</li>
+              <li>How to compress PDF</li>
+              <li>How to compress a PDF file</li>
+              <li>How to compress PDF files</li>
+              <li>How to reduce PDF size</li>
+              <li>How to reduce PDF file size</li>
+              <li>How to make a PDF smaller</li>
+              <li>How to make a PDF file smaller</li>
+              <li>How to reduce a large PDF</li>
+              <li>How to compress PDF without losing quality</li>
+              <li>How to reduce PDF size without losing quality</li>
+              <li>How to compress PDF for email</li>
+              <li>How to reduce PDF size for email</li>
+              <li>How to compress PDF for upload</li>
+              <li>How to compress PDF on phone</li>
+              <li>How to compress PDF on Android</li>
+              <li>How to compress PDF on iPhone</li>
+              <li>How to compress a scanned PDF</li>
+              <li>How to compress a PDF with images</li>
+              <li>How to compress multiple PDF files</li>
+              <li>How to make PDF less than 1MB</li>
+              <li>How to make PDF less than 2MB</li>
+              <li>How to make PDF less than 5MB</li>
+              <li>How to reduce PDF below 1MB</li>
+              <li>How to compress PDF online for free</li>
+              <li>What is the best way to compress a PDF?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const modal = document.getElementById("footer-modal");
+      const trigger = document.getElementById("footer-info-trigger");
+      const closeButton = document.getElementById("footer-modal-close");
+
+      if (!modal || !trigger || !closeButton) return;
+
+      const openModal = () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("overflow-hidden");
+      };
+
+      const closeModal = () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openModal();
+      });
+
+      closeButton.addEventListener("click", closeModal);
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
   <script type="module">import { setupPdfDrop } from "./file-drop.js"; setupPdfDrop("pdf-input", "pdf-drop-zone", "status", "pdf-preview", "preview-empty", "pdf-clear-btn", "pdf-preview-drop-zone");</script>
 </body>
 </html>
